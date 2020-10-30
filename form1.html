@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ID">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body {
+            font-family: serif;
+            background-color: aqua;    
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;}
+        h1,.form1 {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            color:black;
+        }
+        
+        
+        
+        </style>
+        
+        
+    </head>
+
+    <body>
+        <h1 class="form1">Form Registrasi Mahasiswa</h1>
+        <form>   
+            <label>Tanggal</label>
+            <input type="date">
+            <br/>
+            <h2>INFORMASI PRIBADI</h2>
+            <br/>
+            <table>
+                <tr>
+                    <td><label> Nama</label></td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td><label>Tempat/Tanggal Lahir </label></td>
+                    <td><input type="text" name="TTL"> <input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>Agama </label></td>
+                    <td><input type="text" name="agama"></td>
+                </tr>
+                <tr>
+                    <td><label>Jenis Kelamin </label></td>
+                    <td><input type="radio"  name="jk" value="L">Laki-Laki <input type="radio"  name="jk" value="P">Perempuan</td> 
+                </tr>
+            </table>
+            <h2>DATA ALAMAT ASAL</h2>
+            <br/>
+            <table>
+                <tr>
+                    <td><label>Alamat </label></td>
+                    <td><textarea rows="5" cols="20" name="alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Kode Pos</label></td>
+                    <td><input type="text" name="kode pos"></td>
+                </tr>
+                <tr>
+                    <td><label>Provinsi</label></td>
+                    <td><input type="text" name="provinsi"></td>
+                </tr>
+                <tr>
+                    <td><label>Kabupaten</label></td>
+                    <td><input type="text" name="kabupaten"></td>
+                </tr>
+                <tr>
+                    <td><label>kecamatan</label></td>
+                    <td><input type="text" name="kecamatan"></td>
+                </tr>
+            </table>
+            <h2>Data Pendidikan</h2>
+            <br/>
+            <table>
+                <tr>
+                    <td><label>Pendidikan Terakhir</label></td>
+                    <td><select>
+                            <option value="SMA-IPA">SMA - IPA</option>
+                            <option value="SMA-IPS">SMA - IPS</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label >Lainnya</label>
+                        <input type="text" name="lainnya">    
+                       
+                    </td>
+                </tr>
+                <tr>   
+                    <td><label >Nama Sekolah</label></td>
+                    <td><input type="text" name="asal sekolah"></td>
+                </tr>
+            </table>
+            <h2>Pilihan Jurusan</h2>
+            <br>
+            <label></label>
+            <select>
+                <option>Teknik Informatika</option>
+                <option>Sistem Informasi</option>
+            </select>
+            <br>
+
+            <input type="submit" value="simpan" name="proses">
+
+        </form>
+    </body>
+</html>
